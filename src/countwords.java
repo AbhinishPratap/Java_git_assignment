@@ -10,8 +10,10 @@ public class countwords {
     {
         Scanner file=new Scanner(new File(filename));
         while(file.hasNext()){
+
 //        	to read the words in the file until the space comes
             String word=file.next();
+
             Integer count=words.get(word);
             if(count!=null)
                 count++;
@@ -25,5 +27,7 @@ public class countwords {
         Map<String,Integer> words=new HashMap<String, Integer>();
         Count("C:\\Users\\abhinishsingh\\OneDrive - Nagarro\\Desktop\\LOREM IPSUM.txt",words);
         System.out.println(words);
+        //prinitng words
+
     }
 }
